@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "outDir": "./dist",
+    "target": "es2021",
+    "isolatedModules": false,
+    "noEmit": false,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "paths": {
+      "@components/*": ["./src/components/*"],
+      "@utils/*": ["./src/utils/*"],
+      "@interfaces/*": ["./src/interfaces/*"],
+      "@repositories/*": ["./src/database/repositories/*"],
+      "@services/*": ["./src/services/*"],
+      "@public/*": ["./public/*"],
+      "@auth/*": ["./src/auth/*"],
+      "@styles/*": ["./src/styles/*"]
+    },                                /* Skip type checking all .d.ts files. */
+  },
+  "include": ["./src/server/index.ts", "./src/database/*/**.ts"],
+  "exclude": ["node_modules"]
+}
